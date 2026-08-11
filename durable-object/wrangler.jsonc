@@ -7,14 +7,12 @@
 	"name": "durable-object",
 	"main": "src/index.ts",
 	"compatibility_date": "2026-08-10",
-	"migrations": [
-		{
-			"new_sqlite_classes": [
-				"MyDurableObject"
-			],
-			"tag": "v1"
+	"exports": {
+		"MyDurableObject": {
+			"type": "durable-object",
+			"storage": "sqlite"
 		}
-	],
+	},
 	"durable_objects": {
 		"bindings": [
 			{
